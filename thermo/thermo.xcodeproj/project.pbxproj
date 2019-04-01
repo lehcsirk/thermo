@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E3F963222514A1900355577 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3F963122514A1900355577 /* AppDelegate.swift */; };
+		7E3F963422514A1900355577 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3F963322514A1900355577 /* ViewController.swift */; };
+		7E3F963722514A1900355577 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3F963522514A1900355577 /* Main.storyboard */; };
+		7E3F963922514A1B00355577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E3F963822514A1B00355577 /* Assets.xcassets */; };
+		7E3F963C22514A1B00355577 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3F963A22514A1B00355577 /* LaunchScreen.storyboard */; };
+		7E3F964722514A1B00355577 /* thermoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3F964622514A1B00355577 /* thermoTests.swift */; };
+		7E3F965222514A1B00355577 /* thermoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3F965122514A1B00355577 /* thermoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E3F964322514A1B00355577 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E3F962622514A1900355577 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E3F962D22514A1900355577;
+			remoteInfo = thermo;
+		};
+		7E3F964E22514A1B00355577 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E3F962622514A1900355577 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E3F962D22514A1900355577;
+			remoteInfo = thermo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7E3F962E22514A1900355577 /* thermo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thermo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3F963122514A1900355577 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7E3F963322514A1900355577 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7E3F963622514A1900355577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7E3F963822514A1B00355577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E3F963B22514A1B00355577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7E3F963D22514A1B00355577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E3F964222514A1B00355577 /* thermoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thermoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3F964622514A1B00355577 /* thermoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thermoTests.swift; sourceTree = "<group>"; };
+		7E3F964822514A1B00355577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E3F964D22514A1B00355577 /* thermoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thermoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3F965122514A1B00355577 /* thermoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thermoUITests.swift; sourceTree = "<group>"; };
+		7E3F965322514A1B00355577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E3F962B22514A1900355577 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3F963F22514A1B00355577 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3F964A22514A1B00355577 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E3F962522514A1900355577 = {
+			isa = PBXGroup;
+			children = (
+				7E3F963022514A1900355577 /* thermo */,
+				7E3F964522514A1B00355577 /* thermoTests */,
+				7E3F965022514A1B00355577 /* thermoUITests */,
+				7E3F962F22514A1900355577 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E3F962F22514A1900355577 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E3F962E22514A1900355577 /* thermo.app */,
+				7E3F964222514A1B00355577 /* thermoTests.xctest */,
+				7E3F964D22514A1B00355577 /* thermoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E3F963022514A1900355577 /* thermo */ = {
+			isa = PBXGroup;
+			children = (
+				7E3F963122514A1900355577 /* AppDelegate.swift */,
+				7E3F963322514A1900355577 /* ViewController.swift */,
+				7E3F963522514A1900355577 /* Main.storyboard */,
+				7E3F963822514A1B00355577 /* Assets.xcassets */,
+				7E3F963A22514A1B00355577 /* LaunchScreen.storyboard */,
+				7E3F963D22514A1B00355577 /* Info.plist */,
+			);
+			path = thermo;
+			sourceTree = "<group>";
+		};
+		7E3F964522514A1B00355577 /* thermoTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E3F964622514A1B00355577 /* thermoTests.swift */,
+				7E3F964822514A1B00355577 /* Info.plist */,
+			);
+			path = thermoTests;
+			sourceTree = "<group>";
+		};
+		7E3F965022514A1B00355577 /* thermoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7E3F965122514A1B00355577 /* thermoUITests.swift */,
+				7E3F965322514A1B00355577 /* Info.plist */,
+			);
+			path = thermoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E3F962D22514A1900355577 /* thermo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E3F965622514A1B00355577 /* Build configuration list for PBXNativeTarget "thermo" */;
+			buildPhases = (
+				7E3F962A22514A1900355577 /* Sources */,
+				7E3F962B22514A1900355577 /* Frameworks */,
+				7E3F962C22514A1900355577 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = thermo;
+			productName = thermo;
+			productReference = 7E3F962E22514A1900355577 /* thermo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E3F964122514A1B00355577 /* thermoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E3F965922514A1B00355577 /* Build configuration list for PBXNativeTarget "thermoTests" */;
+			buildPhases = (
+				7E3F963E22514A1B00355577 /* Sources */,
+				7E3F963F22514A1B00355577 /* Frameworks */,
+				7E3F964022514A1B00355577 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E3F964422514A1B00355577 /* PBXTargetDependency */,
+			);
+			name = thermoTests;
+			productName = thermoTests;
+			productReference = 7E3F964222514A1B00355577 /* thermoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7E3F964C22514A1B00355577 /* thermoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E3F965C22514A1B00355577 /* Build configuration list for PBXNativeTarget "thermoUITests" */;
+			buildPhases = (
+				7E3F964922514A1B00355577 /* Sources */,
+				7E3F964A22514A1B00355577 /* Frameworks */,
+				7E3F964B22514A1B00355577 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E3F964F22514A1B00355577 /* PBXTargetDependency */,
+			);
+			name = thermoUITests;
+			productName = thermoUITests;
+			productReference = 7E3F964D22514A1B00355577 /* thermoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E3F962622514A1900355577 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Cameron Krischel";
+				TargetAttributes = {
+					7E3F962D22514A1900355577 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					7E3F964122514A1B00355577 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7E3F962D22514A1900355577;
+					};
+					7E3F964C22514A1B00355577 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7E3F962D22514A1900355577;
+					};
+				};
+			};
+			buildConfigurationList = 7E3F962922514A1900355577 /* Build configuration list for PBXProject "thermo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E3F962522514A1900355577;
+			productRefGroup = 7E3F962F22514A1900355577 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E3F962D22514A1900355577 /* thermo */,
+				7E3F964122514A1B00355577 /* thermoTests */,
+				7E3F964C22514A1B00355577 /* thermoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E3F962C22514A1900355577 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3F963C22514A1B00355577 /* LaunchScreen.storyboard in Resources */,
+				7E3F963922514A1B00355577 /* Assets.xcassets in Resources */,
+				7E3F963722514A1900355577 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3F964022514A1B00355577 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3F964B22514A1B00355577 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E3F962A22514A1900355577 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3F963422514A1900355577 /* ViewController.swift in Sources */,
+				7E3F963222514A1900355577 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3F963E22514A1B00355577 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3F964722514A1B00355577 /* thermoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3F964922514A1B00355577 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3F965222514A1B00355577 /* thermoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E3F964422514A1B00355577 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E3F962D22514A1900355577 /* thermo */;
+			targetProxy = 7E3F964322514A1B00355577 /* PBXContainerItemProxy */;
+		};
+		7E3F964F22514A1B00355577 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E3F962D22514A1900355577 /* thermo */;
+			targetProxy = 7E3F964E22514A1B00355577 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7E3F963522514A1900355577 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E3F963622514A1900355577 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7E3F963A22514A1B00355577 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E3F963B22514A1B00355577 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E3F965422514A1B00355577 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7E3F965522514A1B00355577 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E3F965722514A1B00355577 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DCPZJTLLA6;
+				INFOPLIST_FILE = thermo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Krischel.thermo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E3F965822514A1B00355577 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DCPZJTLLA6;
+				INFOPLIST_FILE = thermo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Krischel.thermo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7E3F965A22514A1B00355577 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DCPZJTLLA6;
+				INFOPLIST_FILE = thermoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Krischel.thermoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/thermo.app/thermo";
+			};
+			name = Debug;
+		};
+		7E3F965B22514A1B00355577 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DCPZJTLLA6;
+				INFOPLIST_FILE = thermoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Krischel.thermoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/thermo.app/thermo";
+			};
+			name = Release;
+		};
+		7E3F965D22514A1B00355577 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DCPZJTLLA6;
+				INFOPLIST_FILE = thermoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Krischel.thermoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = thermo;
+			};
+			name = Debug;
+		};
+		7E3F965E22514A1B00355577 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DCPZJTLLA6;
+				INFOPLIST_FILE = thermoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Krischel.thermoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = thermo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E3F962922514A1900355577 /* Build configuration list for PBXProject "thermo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3F965422514A1B00355577 /* Debug */,
+				7E3F965522514A1B00355577 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E3F965622514A1B00355577 /* Build configuration list for PBXNativeTarget "thermo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3F965722514A1B00355577 /* Debug */,
+				7E3F965822514A1B00355577 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E3F965922514A1B00355577 /* Build configuration list for PBXNativeTarget "thermoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3F965A22514A1B00355577 /* Debug */,
+				7E3F965B22514A1B00355577 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E3F965C22514A1B00355577 /* Build configuration list for PBXNativeTarget "thermoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3F965D22514A1B00355577 /* Debug */,
+				7E3F965E22514A1B00355577 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E3F962622514A1900355577 /* Project object */;
+}
