@@ -25,7 +25,7 @@ class ViewController: UIViewController
     var ogX = CGFloat(0)
     var ogY = CGFloat(0)
     
-    var grav = CGFloat(1)
+    var grav = CGFloat(1.0)
     
     var recentX = CGFloat(0)
     var recentY = CGFloat(0)
@@ -37,44 +37,36 @@ class ViewController: UIViewController
     var traceSize = CGFloat(4)
     var traceColor = UIColor.red.cgColor
     
-    var timeInterval    = 0.00001
+    var timeInterval    = 0.0//00001
     var timeCount = Double(0)
-    var countRatio      = 0.0001
+    var countRatio      = 0.00001
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        circleRadius = screenSize.width/16
+        circleRadius = screenSize.width/8
         
         ogX = screenSize.width/2
-        ogY = screenSize.height/2 - screenSize.height/4
-        
-        var centerLabel = UILabel(frame: CGRect(x: 0, y: 0, width: circleRadius, height: circleRadius))
-        centerLabel.center.x = screenSize.width/2
-        centerLabel.center.y = screenSize.height/2
-        centerLabel.text = ""
-        centerLabel.textAlignment = .center
-        centerLabel.layer.cornerRadius = centerLabel.frame.width/2
-        centerLabel.layer.borderWidth = 1.0
-        centerLabel.layer.borderColor = UIColor.black.cgColor
-        self.view.addSubview(centerLabel)
-        
-        for i in 0...swimmerCount-1
-        {
-            makeSwimmer(myXPos: CGFloat(arc4random_uniform(UInt32(screenSize.width))), myYPos: CGFloat(arc4random_uniform(UInt32(screenSize.height))), myName: String(i))
-//            makeSwimmer(myXPos: ogX, myYPos: ogY)
-        }
+        ogY = screenSize.height*1/4
+    
+//        for i in 0...swimmerCount-1
+//        {
+//            makeSwimmer(myXPos: CGFloat(arc4random_uniform(UInt32(screenSize.width))), myYPos: CGFloat(arc4random_uniform(UInt32(screenSize.height))), myName: String(i), size: Int(circleRadius/4))//Int(arc4random_uniform(UInt32(circleRadius))))
+////            makeSwimmer(myXPos: ogX, myYPos: ogY, myName: String(i), size: Int(circleRadius/2))
+//        }
+        makeSwimmer(myXPos: ogX, myYPos: ogY, myName: String("t"), size: Int(circleRadius/2))
+        makeSwimmer(myXPos: ogX, myYPos: screenSize.height - ogY, myName: String("t"), size: Int(circleRadius/2))
         
         
         worldSetup()
         
         let timer = Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: #selector(updateGravity), userInfo: nil, repeats: true)
     }
-    func makeSwimmer(myXPos: CGFloat, myYPos: CGFloat, myName: String)
+    func makeSwimmer(myXPos: CGFloat, myYPos: CGFloat, myName: String, size: Int)
     {
-        var label = UILabel(frame: CGRect(x: 0, y: 0, width: circleRadius, height: circleRadius))
+        var label = UILabel(frame: CGRect(x: 0, y: 0, width: size, height: size))
         label.center.x = myXPos
         label.center.y = myYPos
         label.text = myName
@@ -91,53 +83,56 @@ class ViewController: UIViewController
     
     @objc func updateGravity()
     {
+        var desiredX = CGFloat(0)
+        var desiredY = CGFloat(0)
+        
+        var massX = CGFloat(0)
+        var massY = CGFloat(0)
+        var density = CGFloat(10)
+        
+        for i in 0...labelArray.count-1
+        {
+            desiredX += labelArray[i].center.x*4/3*CGFloat.pi*pow(labelArray[i].frame.width*density, 3)
+            desiredY += labelArray[i].center.y*4/3*CGFloat.pi*pow(labelArray[i].frame.height*density, 3)
+            massX += 4/3*CGFloat.pi*pow(labelArray[i].frame.width*density, 3)
+            massY += 4/3*CGFloat.pi*pow(labelArray[i].frame.height*density, 3)
+        }
+        
+        desiredX = desiredX/massX //CGFloat(labelArray.count)
+        desiredY = desiredY/massY //CGFloat(labelArray.count)
+        
         for i in 0...labelArray.count-1
         {
             var currentX = labelArray[i].center.x
             var currentY = labelArray[i].center.y
             
-            if(currentX == ogX && currentY == ogY)
-            {
-                print("RETURNED TO STARTING POSITION")
-            }
+            var dX = (desiredX - currentX)
+            var dY = (desiredY - currentY)
             
-            var desiredX = screenSize.width/2
-            var desiredY = screenSize.height/2
-            
-            var dX = (desiredX - currentX)*(1)
-            var dY = (desiredY - currentY)*(1)
-            
-            if(dX > 0)
+            if(dX.magnitude > dY.magnitude)
             {
-                dX = grav
-            }
-            else if(dX < 0)
-            {
-                dX = -1*grav
+                dY = dY / dX.magnitude
+                dX = dX / dX.magnitude
             }
             else
             {
-                dX = 0
+                dX = dX / dY.magnitude
+                dY = dY / dY.magnitude
             }
-            if(dY > 0)
-            {
-                dY = grav
-            }
-            else if(dY < 0)
-            {
-                dY = -1*grav
-            }
-            else
-            {
-                dY = 0
-            }
+            dX *= grav
+            dY *= grav
+            dX = round(dX)
+            dY = round(dY)
+//            dX *= pow(labelArray[i].frame.width/circleRadius, 3)
+//            dY *= pow(labelArray[i].frame.height/circleRadius, 3)
             
             gravityArray[i].gravityDirection = CGVector(dx: dX, dy: dY)
             
+            // Draw trails
             timeCount += 1.0
-            if(timeInterval*timeCount >= countRatio)
+            if(Int(timeCount) >= traceCount/labelArray.count)
             {
-                if(timeInterval*timeCount >= countRatio*Double(gravityArray.count))
+                if(Int(timeCount) >= traceCount)
                 {
                     timeCount = 0.0
                 }
@@ -148,8 +143,8 @@ class ViewController: UIViewController
                     layer.fillColor = traceColor
                     layer.zPosition = 0
                     view.layer.addSublayer(layer)
-//                    recentX = currentX
-//                    recentY = currentY
+    //                    recentX = currentX
+    //                    recentY = currentY
                     traceArray.append(layer)
                     if(traceArray.count > traceCount)
                     {
@@ -158,6 +153,7 @@ class ViewController: UIViewController
                     }
                 }
             }
+            
         }
     }
     
@@ -170,13 +166,14 @@ class ViewController: UIViewController
             
             let gravityNew = UIGravityBehavior(items: [labelArray[i]])
             animatorArray[i].addBehavior(gravityNew)
+            gravityNew.gravityDirection = CGVector(dx: 0.0, dy: 0.0)
             gravityArray.append(gravityNew)
             
             collision = UICollisionBehavior(items: [labelArray[i]])
             collision.translatesReferenceBoundsIntoBoundary = true
             animatorArray[i].addBehavior(collision)
             bounce = UIDynamicItemBehavior(items: [labelArray[i]])
-            bounce.elasticity = 0
+            bounce.elasticity = 1.0
             animatorArray[i].addBehavior(bounce)
         }
     }
